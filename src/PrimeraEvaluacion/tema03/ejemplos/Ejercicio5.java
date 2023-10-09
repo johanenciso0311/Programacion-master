@@ -1,10 +1,8 @@
 package PrimeraEvaluacion.tema03.ejemplos;
 
-import com.sun.tools.javac.Main;
-
 import java.util.Scanner;
 
-public class Ejercicio4 {
+public class Ejercicio5 {
     public static void main(String[] args) {
         String user = "johan";
         String password = "johan0311";
@@ -15,12 +13,16 @@ public class Ejercicio4 {
         System.out.println("contraseña: ");
         String contraseña = teclado.nextLine();
 
-        if (usuario.equals(user) && contraseña.equals(password)){
+        if (usuario.equals(user) && contraseña.equals(password)) {
             System.out.println("has entrado al sistema");
 
+        } else if (usuario.equals(user) && !password.equals(contraseña)) {
+            System.out.println("contraseña in conrecta ");
+        } else if (!usuario.equals(user) && password.equals(contraseña)) {
+            System.out.println("usuario in conrecta ");
+        } else
+        {
+            System.out.println("incorreto contraseña y usuario");
         }
-        else System.out.println("usuario y/o contraseña incorrectos");
-
     }
-
-}
+    }

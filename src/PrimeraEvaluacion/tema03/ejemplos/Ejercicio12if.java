@@ -13,23 +13,23 @@ public class Ejercicio12if {
         System.out.println("4-Revenclaw");
         int casa = teclado.nextInt();
 
-        if(casa == 1 ){
-            System.out.println("valentia");
-        }
-        else if (casa == 2) {
-            System.out.println("lealtad");
-        }
-        else if (casa == 3) {
-            System.out.println("astucia");
-        }
-        else if (casa == 4){
-            System.out.println("intelecto");
-        }
+        switch (casa){
+            case 1:
+                System.out.println("valentia");
+                break;
+            case 2:
+                System.out.println("lealtad");
+                break;
+            case 3:
+                System.out.println("Astucia");
+                break;
+            case 4:
+                System.out.println("intelecto");
+                break;
 
-        else {
-            System.out.println("No es una casa valida");
+            default:
+                System.out.println("casa invalida");
         }
-
 
     }
 }

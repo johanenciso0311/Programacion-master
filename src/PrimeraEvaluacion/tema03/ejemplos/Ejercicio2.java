@@ -12,10 +12,10 @@ public class Ejercicio2 {
         int numero2 = teclado.nextInt();
 
         if (numero1 > numero2){
-            System.out.println("es mayor que 1 ");
+            System.out.println("es mayor que  ");
         }
         else {
-            System.out.println("no es mayor que 1");
+            System.out.println("no es mayor que ");
         }
 
     }
